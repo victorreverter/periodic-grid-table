@@ -1,0 +1,1042 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Periodic Table</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="styles/styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<body>
+    <div class="wrap">
+        <h1>Periodic Table</h1>
+        <p class="sub-p">Made with Grid Layout</p>
+
+        <section id="pop-up-box">
+            <div id="close-pop-up">x</div>
+            <div id="element-number-pop" class="other-metals"># 1</div>
+            <h2 id="element-name">Hydrogen (H)</h2>
+            <p id="atomic-weight-pop">Atomic weight: 1,008</p>
+            
+            <button>
+                <a href="#" target="_blank">More Info</a>
+            </button>
+
+            <div class="sub-resalte other-metals"></div>
+        </section>
+
+        <section class="velo-wrap" style="display: none"></section>
+
+        <section class="periodic-table-structure">
+
+            <!-- Row 1 -->
+
+            <section class="grid-element other-metals">
+                <h3 class="atomic-number">1</h3>
+                <h2 class="atomic-capital-letter">H</h2>
+                <p class="element-name">Hydrogen</p>
+                <p>1,008</p>
+            </section>
+
+            <section id="helium" class="grid-element noble-gases">
+                <h3 class="atomic-number">2</h3>
+                <h2 class="atomic-capital-letter">He</h2>
+                <p class="element-name">Helium</p>
+                <p>4,0026</p>
+            </section>
+
+            <!-- Row 2 -->
+
+            <section class="grid-element alkali-metal">
+                <h3 class="atomic-number">3</h3>
+                <h2 class="atomic-capital-letter">Li</h2>
+                <p class="element-name">Lithium</p>
+                <p>6,94</p>
+            </section>
+
+            <section class="grid-element alkaline-earth-metals">
+                <h3 class="atomic-number">4</h3>
+                <h2 class="atomic-capital-letter">Be</h2>
+                <p class="element-name">Beryllium</p>
+                <p>9,0122</p>
+            </section>
+
+            <section id="boron" class="grid-element metaloids">
+                <h3 class="atomic-number">5</h3>
+                <h2 class="atomic-capital-letter">B</h2>
+                <p class="element-name">Boron</p>
+                <p>10,81</p>
+            </section>
+
+            <section class="grid-element other-metals">
+                <h3 class="atomic-number">6</h3>
+                <h2 class="atomic-capital-letter">C</h2>
+                <p class="element-name">Carbon</p>
+                <p>12,011</p>
+            </section>
+
+            <section class="grid-element other-metals">
+                <h3 class="atomic-number">7</h3>
+                <h2 class="atomic-capital-letter">N</h2>
+                <p class="element-name">Nitrogen</p>
+                <p>14,007</p>
+            </section>
+
+            <section class="grid-element other-metals">
+                <h3 class="atomic-number">8</h3>
+                <h2 class="atomic-capital-letter">O</h2>
+                <p class="element-name">Oxygen</p>
+                <p>15,999</p>
+            </section>
+
+            <section class="grid-element other-metals">
+                <h3 class="atomic-number">9</h3>
+                <h2 class="atomic-capital-letter">F</h2>
+                <p class="element-name">Fluorine</p>
+                <p>18,998</p>
+            </section>
+
+            <section class="grid-element noble-gases">
+                <h3 class="atomic-number">10</h3>
+                <h2 class="atomic-capital-letter">Ne</h2>
+                <p class="element-name">Neon</p>
+                <p>20,180</p>
+            </section>
+
+            <!-- Row 3 -->
+
+            <section class="grid-element alkali-metal">
+                <h3 class="atomic-number">11</h3>
+                <h2 class="atomic-capital-letter">Na</h2>
+                <p class="element-name">Sodium</p>
+                <p>22,990</p>
+            </section>
+
+            <section class="grid-element alkaline-earth-metals">
+                <h3 class="atomic-number">12</h3>
+                <h2 class="atomic-capital-letter">Mg</h2>
+                <p class="element-name">Magnesium</p>
+                <p>24,305</p>
+            </section>
+
+            <section id="aluminium" class="grid-element post-transition-metals">
+                <h3 class="atomic-number">13</h3>
+                <h2 class="atomic-capital-letter">Al</h2>
+                <p class="element-name">Aluminium</p>
+                <p>26,982</p>
+            </section>
+
+            <section class="grid-element metaloids">
+                <h3 class="atomic-number">14</h3>
+                <h2 class="atomic-capital-letter">Si</h2>
+                <p class="element-name">Silicon</p>
+                <p>28,085</p>
+            </section>
+
+            <section class="grid-element other-metals">
+                <h3 class="atomic-number">15</h3>
+                <h2 class="atomic-capital-letter">P</h2>
+                <p class="element-name">Phosphorus</p>
+                <p>30,974</p>
+            </section>
+
+            <section class="grid-element other-metals">
+                <h3 class="atomic-number">16</h3>
+                <h2 class="atomic-capital-letter">S</h2>
+                <p class="element-name">Sulfur</p>
+                <p>32,06</p>
+            </section>
+
+            <section class="grid-element other-metals">
+                <h3 class="atomic-number">17</h3>
+                <h2 class="atomic-capital-letter">Cl</h2>
+                <p class="element-name">Chlorine</p>
+                <p>35,45</p>
+            </section>
+
+            <section class="grid-element noble-gases">
+                <h3 class="atomic-number">18</h3>
+                <h2 class="atomic-capital-letter">Ar</h2>
+                <p class="element-name">Argon</p>
+                <p>39,948</p>
+            </section>
+            
+            <!-- Row 4 -->
+
+            <section class="grid-element alkali-metal">
+                <h3 class="atomic-number">19</h3>
+                <h2 class="atomic-capital-letter">K</h2>
+                <p class="element-name">Potassium</p>
+                <p>39,098</p>
+            </section>
+
+            <section class="grid-element alkaline-earth-metals">
+                <h3 class="atomic-number">20</h3>
+                <h2 class="atomic-capital-letter">Ca</h2>
+                <p class="element-name">Calcium</p>
+                <p>40,078</p>
+            </section>
+
+            <section class="grid-element transition-metals">
+                <h3 class="atomic-number">21</h3>
+                <h2 class="atomic-capital-letter">Sc</h2>
+                <p class="element-name">Scandium</p>
+                <p>44,956</p>
+            </section>
+
+            <section class="grid-element transition-metals">
+                <h3 class="atomic-number">22</h3>
+                <h2 class="atomic-capital-letter">Ti</h2>
+                <p class="element-name">Titanium</p>
+                <p>47,867</p>
+            </section>
+
+            <section class="grid-element transition-metals">
+                <h3 class="atomic-number">23</h3>
+                <h2 class="atomic-capital-letter">V</h2>
+                <p class="element-name">Vanadium</p>
+                <p>50,942</p>
+            </section>
+
+            <section class="grid-element transition-metals">
+                <h3 class="atomic-number">24</h3>
+                <h2 class="atomic-capital-letter">Cr</h2>
+                <p class="element-name">Chromium</p>
+                <p>51,996</p>
+            </section>
+
+            <section class="grid-element transition-metals">
+                <h3 class="atomic-number">25</h3>
+                <h2 class="atomic-capital-letter">Mn</h2>
+                <p class="element-name">Manganese</p>
+                <p>54,938</p>
+            </section>
+
+            <section class="grid-element transition-metals">
+                <h3 class="atomic-number">26</h3>
+                <h2 class="atomic-capital-letter">Fe</h2>
+                <p class="element-name">Iron</p>
+                <p>55,845</p>
+            </section>
+
+            <section class="grid-element transition-metals">
+                <h3 class="atomic-number">27</h3>
+                <h2 class="atomic-capital-letter">Co</h2>
+                <p class="element-name">Cobalt</p>
+                <p>58,933</p>
+            </section>
+
+            <section class="grid-element transition-metals">
+                <h3 class="atomic-number">28</h3>
+                <h2 class="atomic-capital-letter">Ni</h2>
+                <p class="element-name">Nickel</p>
+                <p>58,693</p>
+            </section>
+
+            <section class="grid-element transition-metals">
+                <h3 class="atomic-number">29</h3>
+                <h2 class="atomic-capital-letter">Cu</h2>
+                <p class="element-name">Copper</p>
+                <p>63,546</p>
+            </section>
+
+            <section class="grid-element transition-metals">
+                <h3 class="atomic-number">30</h3>
+                <h2 class="atomic-capital-letter">Zn</h2>
+                <p class="element-name">Zinc</p>
+                <p>65,38</p>
+            </section>
+
+            <section class="grid-element post-transition-metals">
+                <h3 class="atomic-number">31</h3>
+                <h2 class="atomic-capital-letter">Ga</h2>
+                <p class="element-name">Gallium</p>
+                <p>69,723</p>
+            </section>
+
+            <section class="grid-element metaloids">
+                <h3 class="atomic-number">32</h3>
+                <h2 class="atomic-capital-letter">Ge</h2>
+                <p class="element-name">Germanium</p>
+                <p>72,630</p>
+            </section>
+
+            <section class="grid-element metaloids">
+                <h3 class="atomic-number">33</h3>
+                <h2 class="atomic-capital-letter">As</h2>
+                <p class="element-name">Arsenic</p>
+                <p>74,922</p>
+            </section>
+
+            <section class="grid-element other-metals">
+                <h3 class="atomic-number">34</h3>
+                <h2 class="atomic-capital-letter">Se</h2>
+                <p class="element-name">Selenium</p>
+                <p>78,971</p>
+            </section>
+
+            <section class="grid-element other-metals">
+                <h3 class="atomic-number">35</h3>
+                <h2 class="atomic-capital-letter">Br</h2>
+                <p class="element-name">Bromine</p>
+                <p>79,904</p>
+            </section>
+
+            <section class="grid-element noble-gases">
+                <h3 class="atomic-number">36</h3>
+                <h2 class="atomic-capital-letter">Kr</h2>
+                <p class="element-name">Krypton</p>
+                <p>83,798</p>
+            </section>
+
+            <!-- Row 5 -->
+
+            <section class="grid-element alkali-metal">
+                <h3 class="atomic-number">37</h3>
+                <h2 class="atomic-capital-letter">Rb</h2>
+                <p class="element-name">Rubidium</p>
+                <p>85,468</p>
+            </section>
+
+            <section class="grid-element alkaline-earth-metals">
+                <h3 class="atomic-number">38</h3>
+                <h2 class="atomic-capital-letter">Sr</h2>
+                <p class="element-name">Strontium</p>
+                <p>87,62</p>
+            </section>
+
+            <section class="grid-element transition-metals">
+                <h3 class="atomic-number">39</h3>
+                <h2 class="atomic-capital-letter">Y</h2>
+                <p class="element-name">Yttrium</p>
+                <p>88,906</p>
+            </section>
+
+            <section class="grid-element transition-metals">
+                <h3 class="atomic-number">40</h3>
+                <h2 class="atomic-capital-letter">Zr</h2>
+                <p class="element-name">Zirconium</p>
+                <p>91,224</p>
+            </section>
+
+            <section class="grid-element transition-metals">
+                <h3 class="atomic-number">41</h3>
+                <h2 class="atomic-capital-letter">Nb</h2>
+                <p class="element-name">Niobium</p>
+                <p>92,906</p>
+            </section>
+
+            <section class="grid-element transition-metals">
+                <h3 class="atomic-number">42</h3>
+                <h2 class="atomic-capital-letter">Mo</h2>
+                <p class="element-name">Molybdenur</p>
+                <p>95,95</p>
+            </section>
+
+            <section class="grid-element transition-metals">
+                <h3 class="atomic-number">43</h3>
+                <h2 class="atomic-capital-letter">Tc</h2>
+                <p class="element-name">Technetium</p>
+                <p>98</p>
+            </section>
+
+            <section class="grid-element transition-metals">
+                <h3 class="atomic-number">44</h3>
+                <h2 class="atomic-capital-letter">Ru</h2>
+                <p class="element-name">Ruthenium</p>
+                <p>101,07</p>
+            </section>
+
+            <section class="grid-element transition-metals">
+                <h3 class="atomic-number">45</h3>
+                <h2 class="atomic-capital-letter">Rh</h2>
+                <p class="element-name">Rhodium</p>
+                <p>102.91</p>
+            </section>
+
+            <section class="grid-element transition-metals">
+                <h3 class="atomic-number">46</h3>
+                <h2 class="atomic-capital-letter">Pd</h2>
+                <p class="element-name">Palladium</p>
+                <p>106,42</p>
+            </section>
+
+            <section class="grid-element transition-metals">
+                <h3 class="atomic-number">47</h3>
+                <h2 class="atomic-capital-letter">Ag</h2>
+                <p class="element-name">Silver</p>
+                <p>107,87</p>
+            </section>
+
+            <section class="grid-element transition-metals">
+                <h3 class="atomic-number">48</h3>
+                <h2 class="atomic-capital-letter">Cd</h2>
+                <p class="element-name">Cadmium</p>
+                <p>112,41</p>
+            </section>
+
+            <section class="grid-element post-transition-metals">
+                <h3 class="atomic-number">49</h3>
+                <h2 class="atomic-capital-letter">In</h2>
+                <p class="element-name">Indium</p>
+                <p>114,82</p>
+            </section>
+
+            <section class="grid-element post-transition-metals">
+                <h3 class="atomic-number">50</h3>
+                <h2 class="atomic-capital-letter">Sn</h2>
+                <p class="element-name">Tin</p>
+                <p>118,71</p>
+            </section>
+
+            <section class="grid-element metaloids">
+                <h3 class="atomic-number">51</h3>
+                <h2 class="atomic-capital-letter">Sb</h2>
+                <p class="element-name">Antimony</p>
+                <p>121,76</p>
+            </section>
+
+            <section class="grid-element metaloids">
+                <h3 class="atomic-number">52</h3>
+                <h2 class="atomic-capital-letter">Te</h2>
+                <p class="element-name">Tellurium</p>
+                <p>127,60</p>
+            </section>
+
+            <section class="grid-element other-metals">
+                <h3 class="atomic-number">53</h3>
+                <h2 class="atomic-capital-letter">I</h2>
+                <p class="element-name">Iodine</p>
+                <p>126,90</p>
+            </section>
+
+            <section class="grid-element noble-gases">
+                <h3 class="atomic-number">54</h3>
+                <h2 class="atomic-capital-letter">Xe</h2>
+                <p class="element-name">Xenon</p>
+                <p>131,29</p>
+            </section>
+
+            <!-- Row 6 -->
+
+            <section class="grid-element alkali-metal">
+                <h3 class="atomic-number">55</h3>
+                <h2 class="atomic-capital-letter">Cs</h2>
+                <p class="element-name">Caesium</p>
+                <p>132,91</p>
+            </section>
+
+            <section class="grid-element alkaline-earth-metals">
+                <h3 class="atomic-number">56</h3>
+                <h2 class="atomic-capital-letter">Ba</h2>
+                <p class="element-name">Batrium</p>
+                <p>137,33</p>
+            </section>
+
+            <section class="grid-element lanthanoids specials-elements">
+                <h2 class="atomic-capital-letter">57-71</h2>
+                <p class="element-name">Lanthanoids</p>
+            </section>
+
+            <!-- LANTHANOIDS -->
+
+            <section id="lanthanum" class="sub-grid-element lanthanoids composed-one">
+                <h3 class="atomic-number">57</h3>
+                <h2 class="atomic-capital-letter">La</h2>
+                <p class="element-name">Lanthanum</p>
+                <p>138,91</p>
+            </section>
+
+            <section class="sub-grid-element lanthanoids composed-two">
+                <h3 class="atomic-number">58</h3>
+                <h2 class="atomic-capital-letter">Ce</h2>
+                <p class="element-name">Cerium</p>
+                <p>140,12</p>
+            </section>
+
+            <section class="sub-grid-element lanthanoids composed-three">
+                <h3 class="atomic-number">59</h3>
+                <h2 class="atomic-capital-letter">Pr</h2>
+                <p class="element-name">Praseodymium</p>
+                <p>140,91</p>
+            </section>
+
+            <section class="sub-grid-element lanthanoids composed-four">
+                <h3 class="atomic-number">60</h3>
+                <h2 class="atomic-capital-letter">Nd</h2>
+                <p class="element-name">Neodymium</p>
+                <p>144,24</p>
+            </section>
+
+            <section class="sub-grid-element lanthanoids composed-five">
+                <h3 class="atomic-number">61</h3>
+                <h2 class="atomic-capital-letter">Pm</h2>
+                <p class="element-name">Promethium</p>
+                <p>145</p>
+            </section>
+
+            <section class="sub-grid-element lanthanoids composed-six">
+                <h3 class="atomic-number">62</h3>
+                <h2 class="atomic-capital-letter">Sm</h2>
+                <p class="element-name">Samarium</p>
+                <p>150,36</p>
+            </section>
+
+            <section class="sub-grid-element lanthanoids composed-seven">
+                <h3 class="atomic-number">63</h3>
+                <h2 class="atomic-capital-letter">Eu</h2>
+                <p class="element-name">Europium</p>
+                <p>151,96</p>
+            </section>
+
+            <section class="sub-grid-element lanthanoids composed-eight">
+                <h3 class="atomic-number">64</h3>
+                <h2 class="atomic-capital-letter">Gd</h2>
+                <p class="element-name">Gadolinium</p>
+                <p>157,25</p>
+            </section>
+
+            <section class="sub-grid-element lanthanoids composed-nine">
+                <h3 class="atomic-number">65</h3>
+                <h2 class="atomic-capital-letter">Tb</h2>
+                <p class="element-name">Terbium</p>
+                <p>158,93</p>
+            </section>
+
+            <section class="sub-grid-element lanthanoids composed-ten">
+                <h3 class="atomic-number">66</h3>
+                <h2 class="atomic-capital-letter">Dy</h2>
+                <p class="element-name">Dysprosium</p>
+                <p>162,50</p>
+            </section>
+
+            <section class="sub-grid-element lanthanoids composed-eleven">
+                <h3 class="atomic-number">67</h3>
+                <h2 class="atomic-capital-letter">Ho</h2>
+                <p class="element-name">Holmium</p>
+                <p>164,93</p>
+            </section>
+
+            <section class="sub-grid-element lanthanoids composed-twelve">
+                <h3 class="atomic-number">68</h3>
+                <h2 class="atomic-capital-letter">Er</h2>
+                <p class="element-name">Erbium</p>
+                <p>167,26</p>
+            </section>
+
+            <section class="sub-grid-element lanthanoids composed-thirteen">
+                <h3 class="atomic-number">69</h3>
+                <h2 class="atomic-capital-letter">Tm</h2>
+                <p class="element-name">Thulium</p>
+                <p>168,93</p>
+            </section>
+
+            <section class="sub-grid-element lanthanoids composed-fourteen">
+                <h3 class="atomic-number">70</h3>
+                <h2 class="atomic-capital-letter">Yb</h2>
+                <p class="element-name">Ytterbium</p>
+                <p>173,05</p>
+            </section>
+
+            <section class="sub-grid-element lanthanoids composed-fifteen">
+                <h3 class="atomic-number">71</h3>
+                <h2 class="atomic-capital-letter">Lu</h2>
+                <p class="element-name">Lutetium</p>
+                <p>174,97</p>
+            </section>
+
+            <!-- END of LANTHANOIDS -->
+
+            <section class="grid-element transition-metals">
+                <h3 class="atomic-number">72</h3>
+                <h2 class="atomic-capital-letter">Hf</h2>
+                <p class="element-name">Hafnium</p>
+                <p>145</p>
+            </section>
+
+            <section class="grid-element transition-metals">
+                <h3 class="atomic-number">73</h3>
+                <h2 class="atomic-capital-letter">Ta</h2>
+                <p class="element-name">Tantalum</p>
+                <p>180,95</p>
+            </section>
+
+            <section class="grid-element transition-metals">
+                <h3 class="atomic-number">74</h3>
+                <h2 class="atomic-capital-letter">W</h2>
+                <p class="element-name">Tungsten</p>
+                <p>183,84</p>
+            </section>
+
+            <section class="grid-element transition-metals">
+                <h3 class="atomic-number">75</h3>
+                <h2 class="atomic-capital-letter">Re</h2>
+                <p class="element-name">Rhenium</p>
+                <p>186,21</p>
+            </section>
+
+            <section class="grid-element transition-metals">
+                <h3 class="atomic-number">76</h3>
+                <h2 class="atomic-capital-letter">Os</h2>
+                <p class="element-name">Osmium</p>
+                <p>190,23</p>
+            </section>
+
+            <section class="grid-element transition-metals">
+                <h3 class="atomic-number">77</h3>
+                <h2 class="atomic-capital-letter">Ir</h2>
+                <p class="element-name">Iridium</p>
+                <p>192,22</p>
+            </section>
+
+            <section class="grid-element transition-metals">
+                <h3 class="atomic-number">78</h3>
+                <h2 class="atomic-capital-letter">Pt</h2>
+                <p class="element-name">Platinum</p>
+                <p>195,08</p>
+            </section>
+
+            <section class="grid-element transition-metals">
+                <h3 class="atomic-number">79</h3>
+                <h2 class="atomic-capital-letter">Au</h2>
+                <p class="element-name">Gold</p>
+                <p>196,97</p>
+            </section>
+
+            <section class="grid-element transition-metals">
+                <h3 class="atomic-number">80</h3>
+                <h2 class="atomic-capital-letter">Hg</h2>
+                <p class="element-name">Mercury</p>
+                <p>200,59</p>
+            </section>
+
+            <section class="grid-element post-transition-metals">
+                <h3 class="atomic-number">81</h3>
+                <h2 class="atomic-capital-letter">Tl</h2>
+                <p class="element-name">Thallium</p>
+                <p>204,38</p>
+            </section>
+
+            <section class="grid-element post-transition-metals">
+                <h3 class="atomic-number">82</h3>
+                <h2 class="atomic-capital-letter">Pb</h2>
+                <p class="element-name">Lead</p>
+                <p>207,2</p>
+            </section>
+
+            <section class="grid-element post-transition-metals">
+                <h3 class="atomic-number">83</h3>
+                <h2 class="atomic-capital-letter">Bi</h2>
+                <p class="element-name">Bismuth</p>
+                <p>208,98</p>
+            </section>
+
+            <section class="grid-element post-transition-metals">
+                <h3 class="atomic-number">84</h3>
+                <h2 class="atomic-capital-letter">Po</h2>
+                <p class="element-name">Polonium</p>
+                <p>209</p>
+            </section>
+
+            <section class="grid-element metaloids">
+                <h3 class="atomic-number">85</h3>
+                <h2 class="atomic-capital-letter">At</h2>
+                <p class="element-name">Astatine</p>
+                <p>210</p>
+            </section>
+
+            <section class="grid-element noble-gases">
+                <h3 class="atomic-number">86</h3>
+                <h2 class="atomic-capital-letter">Rn</h2>
+                <p class="element-name">Radon</p>
+                <p>222</p>
+            </section>
+
+            <!-- Row 7 -->
+
+            <section class="grid-element alkali-metal">
+                <h3 class="atomic-number">87</h3>
+                <h2 class="atomic-capital-letter">Fr</h2>
+                <p class="element-name">Francium</p>
+                <p>223</p>
+            </section>
+
+            <section class="grid-element alkaline-earth-metals">
+                <h3 class="atomic-number">88</h3>
+                <h2 class="atomic-capital-letter">Ra</h2>
+                <p class="element-name">Radium</p>
+                <p>226</p>
+            </section>
+
+            <section class="grid-element actinoids specials-elements">
+                <h2 class="atomic-capital-letter">98-103</h2>
+                <p class="element-name">Actinoids</p>
+            </section>
+
+            <!-- ACTINOIDS -->
+
+            <section id="actinium" class="grid-element actinoids composed-one">
+                <h3 class="atomic-number">89</h3>
+                <h2 class="atomic-capital-letter">Ac</h2>
+                <p class="element-name">Actinium</p>
+                <p>227</p>
+            </section>
+
+            <section class="grid-element actinoids composed-two">
+                <h3 class="atomic-number">90</h3>
+                <h2 class="atomic-capital-letter">Th</h2>
+                <p class="element-name">Thorium</p>
+                <p>232,04</p>
+            </section>
+
+            <section class="grid-element actinoids composed-three">
+                <h3 class="atomic-number">91</h3>
+                <h2 class="atomic-capital-letter">Pa</h2>
+                <p class="element-name">Protactinium</p>
+                <p>231,04</p>
+            </section>
+
+            <section class="grid-element actinoids composed-four">
+                <h3 class="atomic-number">92</h3>
+                <h2 class="atomic-capital-letter">U</h2>
+                <p class="element-name">Uranium</p>
+                <p>238,03</p>
+            </section>
+
+            <section class="grid-element actinoids composed-five">
+                <h3 class="atomic-number">93</h3>
+                <h2 class="atomic-capital-letter">Np</h2>
+                <p class="element-name">Neptunium</p>
+                <p>237</p>
+            </section>
+
+            <section class="grid-element actinoids composed-six">
+                <h3 class="atomic-number">94</h3>
+                <h2 class="atomic-capital-letter">Pu</h2>
+                <p class="element-name">Plutonium</p>
+                <p>244</p>
+            </section>
+
+            <section class="grid-element actinoids composed-seven">
+                <h3 class="atomic-number">95</h3>
+                <h2 class="atomic-capital-letter">Am</h2>
+                <p class="element-name">Americicum</p>
+                <p>243</p>
+            </section>
+
+            <section class="grid-element actinoids composed-eight">
+                <h3 class="atomic-number">96</h3>
+                <h2 class="atomic-capital-letter">Cm</h2>
+                <p class="element-name">Curium</p>
+                <p>247</p>
+            </section>
+
+            <section class="grid-element actinoids composed-nine">
+                <h3 class="atomic-number">97</h3>
+                <h2 class="atomic-capital-letter">Bk</h2>
+                <p class="element-name">Berkelium</p>
+                <p>247</p>
+            </section>
+
+            <section class="grid-element actinoids composed-ten">
+                <h3 class="atomic-number">98</h3>
+                <h2 class="atomic-capital-letter">Cf</h2>
+                <p class="element-name">Californium</p>
+                <p>251</p>
+            </section>
+
+            <section class="grid-element actinoids composed-eleven">
+                <h3 class="atomic-number">99</h3>
+                <h2 class="atomic-capital-letter">Es</h2>
+                <p class="element-name">Einsteinium</p>
+                <p>252</p>
+            </section>
+
+            <section class="grid-element actinoids composed-twelve">
+                <h3 class="atomic-number">100</h3>
+                <h2 class="atomic-capital-letter">Fm</h2>
+                <p class="element-name">Fermium</p>
+                <p>257</p>
+            </section>
+
+            <section class="grid-element actinoids composed-thirteen">
+                <h3 class="atomic-number">101</h3>
+                <h2 class="atomic-capital-letter">Md</h2>
+                <p class="element-name">Mendelevium</p>
+                <p>258</p>
+            </section>
+
+            <section class="grid-element actinoids composed-fourteen">
+                <h3 class="atomic-number">102</h3>
+                <h2 class="atomic-capital-letter">No</h2>
+                <p class="element-name">Nobelium</p>
+                <p>259</p>
+            </section>
+
+            <section class="grid-element actinoids composed-fifteen">
+                <h3 class="atomic-number">103</h3>
+                <h2 class="atomic-capital-letter">Lr</h2>
+                <p class="element-name">Lawrencium</p>
+                <p>266</p>
+            </section>
+
+            <!-- ENDO of ACTINOIDS -->
+
+            <section class="grid-element transition-metals">
+                <h3 class="atomic-number">104</h3>
+                <h2 class="atomic-capital-letter">Rf</h2>
+                <p class="element-name">Rutherfordium</p>
+                <p>267</p>
+            </section>
+
+            <section class="grid-element transition-metals">
+                <h3 class="atomic-number">105</h3>
+                <h2 class="atomic-capital-letter">Db</h2>
+                <p class="element-name">Dubnium</p>
+                <p>268</p>
+            </section>
+
+            <section class="grid-element transition-metals">
+                <h3 class="atomic-number">106</h3>
+                <h2 class="atomic-capital-letter">Sg</h2>
+                <p class="element-name">Seaborgium</p>
+                <p>269</p>
+            </section>
+
+            <section class="grid-element transition-metals">
+                <h3 class="atomic-number">107</h3>
+                <h2 class="atomic-capital-letter">Bh</h2>
+                <p class="element-name">Bohrium</p>
+                <p>270</p>
+            </section>
+
+            <section class="grid-element transition-metals">
+                <h3 class="atomic-number">108</h3>
+                <h2 class="atomic-capital-letter">Hs</h2>
+                <p class="element-name">Hassium</p>
+                <p>270</p>
+            </section>
+
+            <section class="grid-element other-elements">
+                <h3 class="atomic-number">109</h3>
+                <h2 class="atomic-capital-letter">Mt</h2>
+                <p class="element-name">Meitnerium</p>
+                <p>278</p>
+            </section>
+
+            <section class="grid-element other-elements">
+                <h3 class="atomic-number">110</h3>
+                <h2 class="atomic-capital-letter">Ds</h2>
+                <p class="element-name">Darmstadtium</p>
+                <p>281</p>
+            </section>
+
+            <section class="grid-element other-elements">
+                <h3 class="atomic-number">111</h3>
+                <h2 class="atomic-capital-letter">Rg</h2>
+                <p class="element-name">Roentgenium</p>
+                <p>282</p>
+            </section>
+
+            <section class="grid-element transition-metals">
+                <h3 class="atomic-number">112</h3>
+                <h2 class="atomic-capital-letter">Cn</h2>
+                <p class="element-name">Copernicium</p>
+                <p>285</p>
+            </section>
+
+            <section class="grid-element other-elements">
+                <h3 class="atomic-number">113</h3>
+                <h2 class="atomic-capital-letter">Nh</h2>
+                <p class="element-name">Nithonium</p>
+                <p>286</p>
+            </section>
+
+            <section class="grid-element post-transition-metals">
+                <h3 class="atomic-number">114</h3>
+                <h2 class="atomic-capital-letter">Fl</h2>
+                <p class="element-name">Flerovium</p>
+                <p>289</p>
+            </section>
+
+            <section class="grid-element other-elements">
+                <h3 class="atomic-number">115</h3>
+                <h2 class="atomic-capital-letter">Mc</h2>
+                <p class="element-name">Moscovium</p>
+                <p>290</p>
+            </section>
+
+            <section class="grid-element other-elements">
+                <h3 class="atomic-number">116</h3>
+                <h2 class="atomic-capital-letter">Lv</h2>
+                <p class="element-name">Livermorium</p>
+                <p>293</p>
+            </section>
+
+            <section class="grid-element other-elements">
+                <h3 class="atomic-number">117</h3>
+                <h2 class="atomic-capital-letter">Ts</h2>
+                <p class="element-name">Tennessine</p>
+                <p>294</p>
+            </section>
+
+            <section class="grid-element other-elements">
+                <h3 class="atomic-number">118</h3>
+                <h2 class="atomic-capital-letter">Og</h2>
+                <p class="element-name">Oganesson</p>
+                <p>294</p>
+            </section>
+
+        </section>
+
+        <section class="color-summary">
+            <div id="otherNonMetals" class="color-element">
+                <div></div>
+                <p>Other Non Metals</p>
+            </div>   
+            
+            <div id="alkaliMetal" class="color-element">
+                <div></div>
+                <p>Alkali Metal</p>
+            </div>  
+            
+            <div id="alkalineEarthMetals" class="color-element">
+                <div></div>
+                <p>Alkaline Earth Metals</p>
+            </div>  
+
+            <div id="transitionMetals" class="color-element">
+                <div></div>
+                <p>Transition Metals</p>
+            </div>  
+
+            <div id="lanthanoidsColor" class="color-element">
+                <div></div>
+                <p>Lanthanoids</p>
+            </div>  
+
+            <div id="actinoidsColor" class="color-element">
+                <div></div>
+                <p>Actinoids</p>
+            </div>  
+
+            <div id="postTransitionMetals" class="color-element">
+                <div></div>
+                <p>Post Transition Metals</p>
+            </div>  
+
+            <div id="metaloids" class="color-element">
+                <div></div>
+                <p>Metaloids</p>
+            </div>
+            
+            <div id="nobleGases" class="color-element">
+                <div></div>
+                <p>Noble Gases</p>
+            </div>
+
+            <div id="otherElements" class="color-element">
+                <div></div>
+                <p>Other Elements</p>
+            </div>
+        </section>
+    </div>
+
+    <script>
+        $('.grid-element, .sub-grid-element').on('click', function() {
+            var elementChildren = this.children;
+            var elementAtomicNumber = '# ' + this.children[0].textContent;
+            var elementAtomicCapitalLetter = this.children[1].textContent;
+            var elementName = this.children[2].textContent;
+            var elementConstruction = elementName + ' (' + elementAtomicCapitalLetter + ')';
+            var elementAtomicWeight = 'Atomic weight: ' + this.children[3].textContent;
+            var elementUrl = 'https://en.wikipedia.org/wiki/' + elementName;
+           
+            // console.log(this);
+            // console.log(this.children);
+            // console.log(this.children[0].textContent);
+            // console.log(this.children[0]);
+
+            // Pop Up Construction
+
+            $('#element-number-pop').html(elementAtomicNumber);
+            $('#element-name').html(elementConstruction);
+            $('#atomic-weight-pop').html(elementAtomicWeight);
+
+            // Attr definer
+            $('#pop-up-box button a').attr('href', elementUrl);
+            
+            // Color definer
+            var bgElementColor = $(this).css('background');
+
+            // console.log(bgElementColor);
+            $('#element-number-pop, .sub-resalte').css('background', bgElementColor);
+
+            // Show up Pop up
+            $('#pop-up-box').css('left', '50%');
+            $('.velo-wrap').fadeIn(500);
+            // $('body').css('overflow', 'hidden');
+        });
+
+        $('#close-pop-up').on('click', function() {
+            // Show off Pop up
+            $('#pop-up-box').css('left', '-50%');
+            $('.velo-wrap').fadeOut(500);
+            // $('body').css('overflow', 'initial');
+        });
+
+        // Color filter by element groups
+        $('.color-element').mouseenter(function() {
+            // console.log('color element hovered');
+            console.log(this.id);            
+
+            if (this.id == 'otherNonMetals'){
+                $('.grid-element, .sub-grid-element').css('opacity', 0.6);
+                $('.periodic-table-structure .other-metals').css('opacity', 1);
+
+            } else if (this.id == 'alkaliMetal') {
+                $('.grid-element, .sub-grid-element').css('opacity', 0.6);
+                $('.periodic-table-structure .alkali-metal').css('opacity', 1);
+
+            } else if (this.id == 'alkalineEarthMetals') {
+                $('.grid-element, .sub-grid-element').css('opacity', 0.6);
+                $('.periodic-table-structure .alkaline-earth-metals').css('opacity', 1);
+
+            } else if (this.id == 'transitionMetals') {
+                $('.grid-element, .sub-grid-element').css('opacity', 0.6);
+                $('.periodic-table-structure .transition-metals').css('opacity', 1);
+                
+            } else if (this.id == 'lanthanoidsColor') {
+                $('.grid-element, .sub-grid-element').css('opacity', 0.6);
+                $('.periodic-table-structure .lanthanoids').css('opacity', 1);
+                
+            }  else if (this.id == 'actinoidsColor') {
+                $('.grid-element, .sub-grid-element').css('opacity', 0.6);
+                $('.periodic-table-structure .actinoids').css('opacity', 1);
+                
+            } else if (this.id == 'postTransitionMetals') {
+                $('.grid-element, .sub-grid-element').css('opacity', 0.6);
+                $('.periodic-table-structure .post-transition-metals').css('opacity', 1);
+                
+            }  else if (this.id == 'metaloids') {
+                $('.grid-element, .sub-grid-element').css('opacity', 0.6);
+                $('.periodic-table-structure .metaloids').css('opacity', 1);
+                
+            }  else if (this.id == 'nobleGases') {
+                $('.grid-element, .sub-grid-element').css('opacity', 0.6);
+                $('.periodic-table-structure .noble-gases').css('opacity', 1);
+                
+            }  else if (this.id == 'otherElements') {
+                $('.grid-element, .sub-grid-element').css('opacity', 0.6);
+                $('.periodic-table-structure .other-elements').css('opacity', 1);
+                
+            }          
+        });
+
+        $('.color-element').mouseleave(function() {  
+            $('.grid-element, .sub-grid-element').css('opacity', 1);
+        });
+    </script>
+</body>
+</html>

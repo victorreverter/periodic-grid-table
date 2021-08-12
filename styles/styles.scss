@@ -1,0 +1,568 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald:400,600,700&display=swap');
+@import 'reset';
+
+$white: #fff;
+$black: #000;
+
+$colorBg: #525252;
+$colorText: $white;
+$colorAltText: #353535;
+
+$colorVelo: rgba(0, 0, 0, 0.6);
+$colorPopUp: $colorBg;
+
+$colorAlkaliMetal: #f3a953; // Alkali Metal
+$colorAlkalineEarthMetals: #f1d300; // Alkaline earth metals
+$colorLanthanoids: #f38181; // Lanthanoids
+$colorActinoids: #eda1ab; // Actinoids
+$colorTransitionMetals: #dea0cb; // Transition metals
+$colorPostTransitionMetals: #75cac3; // Post-transition metals
+$colorMetaloids: #7bc67b; // Metaloids
+$colorOtherNonMetals: #23eae6; // Other non metals
+$colorNobleGases: #e86ed0; // Noble gases
+$colorOtherElements: #a2a8d3; //Other Elements
+
+$breakpointOne: 620px;
+$breakpointTwo: 850px;
+$breakpointThree: 1120px;
+
+body {
+    width: 100%;
+    min-height: 100vh;
+
+    font-family: 'Oswald', sans-serif;
+}
+
+.wrap {
+    display: block;
+
+    width: 100%;
+    min-height: 100vh;
+    background: $colorBg;
+
+    h1, .sub-p {
+        display: block;
+        width: 100%;
+        text-align: center;
+
+        color: $colorText;
+        font-size: 2.3rem;
+        font-weight: 900;        
+        padding: 2rem 0 0;
+    }
+
+    .sub-p {
+        font-size: 1rem;
+        color: #b1b1b1;
+        padding: 0.5rem 0 2rem;
+    }
+}
+
+#pop-up-box {
+    display: block;
+    width: 90%;
+    max-width: 300px;
+
+    position: fixed;
+    top: 40%;
+    left: -50%;
+    transform: translate(-50%, -50%);
+
+    background: $colorPopUp;
+    border-radius: 8px;
+    overflow: hidden;
+
+    box-shadow: 2px 2px 18px 3px #000000;
+
+    z-index: 5;
+
+    transition: 0.5s;
+
+    @media (min-width: $breakpointThree) {
+        transition: 0.8s;
+    }
+
+    #close-pop-up {
+        position: absolute;
+        top: 7%;
+        right: 2%;
+        transform: translate(-50%, -50%);
+
+        font-size: 1.6rem;
+        font-weight: 800;
+        cursor: pointer;
+
+        color: $colorAltText;
+    }
+
+    #element-number-pop {
+        display: block;
+        width: 100%;
+        text-align: center;
+
+        font-size: 1.6rem;
+        font-weight: 900;
+        padding: 0.6rem 0;
+
+        color: $colorText;
+    }
+
+    #element-name {
+        display: block;
+        width: 100%;
+        text-align: center;
+
+        font-size: 1.8rem;
+        font-weight: 900;
+        padding: 2rem 0 0;
+        color: $colorText;
+    }
+
+    #atomic-weight-pop {
+        display: block;
+        width: 100%;
+        text-align: center;
+
+        font-size: 1.4rem;
+        font-weight: 900;
+        padding: 1rem 0 2rem;
+        color: $colorText;
+    }
+
+    button {
+        display: block;
+        width: 100%;
+        background: none;
+        border: none;
+        // display: block;
+        // width: 90%;
+        // margin: 0 auto 2em;
+        
+        // padding: 0.8em 0;
+        
+        // background: $white;
+        // border: none;
+        // border-radius: 5px;
+
+        // cursor: pointer;
+
+
+        a {
+            display: block;
+            width: 90%;
+            margin: 0 auto 1.3em;
+
+            padding: 0.8em 0;
+
+            background: #2f2f2f;
+            border: none;
+            border-radius: 5px;
+
+            cursor: pointer;
+
+            text-decoration: none;
+            color: $white;
+
+            font-size: 1.6em;
+            font-weight: 600;
+        }
+    }
+
+    .sub-resalte {
+        display: block;
+        width: 100%;
+        padding: 0.4rem 0;
+    }
+}
+
+.velo-wrap {
+    display: block;
+    width: 100%;
+    min-height: 100vh;
+    background: $colorVelo;
+    
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+    z-index: 1;
+}
+
+.periodic-table-structure {
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-rows: auto;
+    // grid-row-gap: 0.1%;
+    // grid-column-gap: 2%;
+    justify-content: space-around;
+    grid-gap: 10px 2%;
+
+    max-width: 1170px;
+    margin: 0 auto;
+
+    // display: flex;
+    // flex-flow: row wrap;
+    // align-items: center;
+    // justify-content: space-around;
+
+    // width: 100%;
+    // padding: 0 2%;    
+
+    @media (min-width: $breakpointOne) {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-gap: 15px 2%;       
+    }
+
+    @media (min-width: $breakpointTwo) {
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-gap: 18px 2%;
+    }
+
+    @media (min-width: $breakpointThree) {
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-gap: 5px 5px;
+
+        section:nth-child(n+58):nth-last-child(n+49) {
+            grid-row-start: 8;
+        }
+
+        section:nth-child(n+91):nth-last-child(n+16) {
+            grid-row-start: 9;
+        }
+    }    
+}
+
+// Adjust of ids to create the Grid Periodic Table
+
+#helium {
+    @media (min-width: $breakpointThree) {
+        grid-column-start: 18;
+    }
+}
+
+#boron {
+    @media (min-width: $breakpointThree) {
+        grid-column-start: 13;
+    }
+}
+
+#aluminium {
+    @media (min-width: $breakpointThree) {
+        grid-column-start: 13;
+    }
+}
+
+// Actinoids and lanthanoids displacing
+
+// #lanthanum, #actinium {
+//     @media (min-width: $breakpointThree) {
+//         grid-column-start: 4;
+//     }
+// }
+
+.composed-one {
+    @media (min-width: $breakpointThree) {
+        grid-column-start: 3;
+    }
+}
+
+.composed-two {
+    @media (min-width: $breakpointThree) {
+        grid-column-start: 4;
+    }
+}
+
+.composed-three {
+    @media (min-width: $breakpointThree) {
+        grid-column-start: 5;
+    }
+}
+
+.composed-four {
+    @media (min-width: $breakpointThree) {
+        grid-column-start: 6;
+    }
+}
+
+.composed-five {
+    @media (min-width: $breakpointThree) {
+        grid-column-start: 7;
+    }
+}
+
+.composed-six {
+    @media (min-width: $breakpointThree) {
+        grid-column-start: 8;
+    }
+}
+
+.composed-seven {
+    @media (min-width: $breakpointThree) {
+        grid-column-start: 9;
+    }
+}
+
+.composed-eight {
+    @media (min-width: $breakpointThree) {
+        grid-column-start: 10;
+    }
+}
+
+.composed-nine {
+    @media (min-width: $breakpointThree) {
+        grid-column-start: 11;
+    }
+}
+
+.composed-ten {
+    @media (min-width: $breakpointThree) {
+        grid-column-start: 12;
+    }
+}
+
+.composed-eleven {
+    @media (min-width: $breakpointThree) {
+        grid-column-start: 13;
+    }
+}
+
+.composed-twelve {
+    @media (min-width: $breakpointThree) {
+        grid-column-start: 14;
+    }
+}
+
+.composed-thirteen {
+    @media (min-width: $breakpointThree) {
+        grid-column-start: 15;
+    }
+}
+
+.composed-fourteen {
+    @media (min-width: $breakpointThree) {
+        grid-column-start: 16;
+    }
+}
+
+.composed-fifteen {
+    @media (min-width: $breakpointThree) {
+        grid-column-start: 17;
+    }
+}
+
+
+
+// Element colors -------------------------------
+
+.alkali-metal {
+    background: $colorAlkaliMetal;
+}
+
+.alkaline-earth-metals {
+    background: $colorAlkalineEarthMetals;
+}
+
+.lanthanoids {
+    background: $colorLanthanoids;
+}
+
+.actinoids {
+    background: $colorActinoids;
+}
+
+.transition-metals {
+    background: $colorTransitionMetals;
+}
+
+.post-transition-metals {
+    background: $colorPostTransitionMetals;
+}
+
+.metaloids {
+    background: $colorMetaloids;
+}
+
+.other-metals {
+    background: $colorOtherNonMetals;
+}
+
+.noble-gases {
+    background: $colorNobleGases;
+}
+
+.other-elements {
+    background: $colorOtherElements;
+}
+
+
+// End Element colors ---------------------------
+
+.grid-element, .sub-grid-element {
+    display: block;
+    width: 100%;
+    // width: 27%;
+
+    // margin: 2% auto 0;
+    padding: 0.6rem 0;
+    border-radius: 5px;
+    cursor: pointer;
+    // padding: 0.6rem 0.4rem;
+
+    h2{
+        display: block;
+        width: 100%;
+
+        font-size: 2.8rem;
+        font-weight: 600;
+        padding: 0.5rem 0;
+
+        text-align: center;
+        color: $colorText;
+    }
+
+    h3 {
+        display: block;
+
+        font-size: 1.1rem;
+        font-weight: 900;
+        color: $colorAltText;
+        padding: 0 0.4rem;
+    }
+
+    p {
+        display: block;
+
+        font-size: 0.9rem;
+        color: $colorAltText;
+
+        padding: 0.1rem 0.4rem;
+    }
+
+    .element-name {
+        font-weight: 900;
+    }
+
+    @media (min-width: $breakpointThree) {
+        width: 58px;
+        height: 60px; 
+        padding: 0.2rem 0;
+
+        h2{
+            font-size: 1.1rem;
+            padding: 0.2rem 0;
+        }
+
+        h3, p{
+            font-size: 0.6rem;
+            padding: 0.1rem 0.2rem;
+        }
+    }
+}
+
+.specials-elements{
+    display: none;
+    min-height: 111px;
+
+    h2 {
+        font-size: 2.2rem;
+        padding: 2.1rem 0 0.5rem;
+    }
+
+    @media (min-width: $breakpointThree){
+        display: block;
+        min-height: 55px;
+
+        h2 {
+            font-size: 1.2rem;
+            padding: 1.1rem 0 0.5rem;
+        }
+    }
+}
+
+// .grid-element{
+//     order: 2;
+// }
+
+// .sub-grid-element{
+//     order: 1;
+//     margin: 2% auto 4rem;
+// }
+
+.color-summary {
+    display: none;    
+
+    @media (min-width: $breakpointThree) {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+
+        width: 90%;
+        margin: 0 auto;
+        padding: 2rem 0;
+        cursor: pointer;
+
+        .color-element { 
+            display: flex;
+            flex-direction: row;  
+            align-items: center;
+            padding: 0 0.5rem;                   
+
+            div {
+                width: 10px;
+                height: 10px;
+                // background: red;
+                border-radius: 100%;
+            }
+
+            p {
+                font-size: 0.85rem;
+                padding: 0 0.3em;
+                color: $colorText;
+            }
+        }
+
+        #otherNonMetals div{
+            background: $colorOtherNonMetals;
+        }
+
+        #alkaliMetal div{
+            background: $colorAlkaliMetal;
+        }
+
+        #alkalineEarthMetals div{
+            background: $colorAlkalineEarthMetals;
+        }
+
+        #transitionMetals div{
+            background: $colorTransitionMetals;
+        }
+
+        #lanthanoidsColor div{
+            background: $colorLanthanoids;
+        }
+
+        #actinoidsColor div{
+            background: $colorActinoids;
+        }
+
+        #postTransitionMetals div{
+            background: $colorPostTransitionMetals;
+        }
+
+        #metaloids div{
+            background: $colorMetaloids;
+        }
+
+        #nobleGases div{
+            background: $colorNobleGases;
+        }
+
+        #otherElements div{
+            background: $colorOtherElements;
+        }
+
+
+    }
+}
